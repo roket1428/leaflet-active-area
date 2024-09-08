@@ -1,27 +1,36 @@
 {
-  "name": "leaflet-active-area",
-  "version": "1.3.0",
-  "main": "src/leaflet.activearea.js",
-  "devDependencies": {
-    "expect": "^29.7.0",
-    "karma": "^6.4.3",
-    "karma-chrome-launcher": "^3.2.0",
-    "karma-expect": "^1.1.3",
-    "karma-mocha": "^2.0.1",
-    "leaflet": "^1.9.4",
-    "mocha": "^10.4.0"
-  },
-  "scripts": {
-    "test": "./node_modules/karma/bin/karma start ./spec/karma.conf.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:Mappy/Leaflet-active-area.git"
-  },
-  "licenses": [
-    {
-      "type": "Apache 2.0 license",
-      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    "type": "module",
+    "name": "react-leaflet-active-area",
+    "version": "0.0.1",
+    "description": "A Leaflet plugin to center the map not in the center of the map but inside a DIV. Useful for responsive design.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roket1428/leaflet-active-area.git"
+    },
+    "keywords": [
+        "react",
+        "leaflet",
+        "plugin"
+    ],
+    "author": "",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/roket1428/leaflet-active-area/issues"
+    },
+    "homepage": "https://github.com/roket1428/leaflet-active-area#readme",
+    "devDependencies": {
+        "@types/leaflet": "^1.9.12",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "leaflet": "^1.9.4"
     }
-  ]
 }
