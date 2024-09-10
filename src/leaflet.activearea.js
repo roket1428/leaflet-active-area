@@ -15,8 +15,8 @@ if (typeof previousMethods === 'undefined') {
 L.Map.include({
 
     // Overrides L.Map.getBounds
-    getBounds: function() {
-        if (this._viewport) {
+    getBounds: function(useOriginal) {
+        if (this._viewport && !useOriginal) {
             return this.getViewportLatLngBounds()
         } else {
             var bounds = this.getPixelBounds(),
