@@ -1,4 +1,5 @@
 (function(previousMethods){
+const L = window.L;
 if (typeof previousMethods === 'undefined') {
     // Defining previously that object allows you to use that plugin even if you have overridden L.map
     previousMethods = {
